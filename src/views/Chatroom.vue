@@ -8,7 +8,7 @@
     <GroupChatAccess @enterGCroom="enterGCroom"></GroupChatAccess>
   </div>
 
-  <!-- <Users></Users> -->
+  <Users></Users>
 </template>
 
 <script>

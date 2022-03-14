@@ -1,6 +1,6 @@
 <template>
-  <div v-for="name in data" :key="name">
-    <h3>{{ name }}</h3>
+  <div v-for="user in data" :key="user.id">
+    <h3>{{ user.name }}</h3>
   </div>
 </template>
 
@@ -24,9 +24,9 @@ export default {
           names.value.push(datum.name);
         });
 
-        data.value = names.value.filter((name, index, array) => {
-          return array.indexOf(name) == index;
-        });
+        // data.value = names.value.filter((name, index, array) => {
+        //   return array.indexOf(name) == index;
+        // });
       });
 
     return { data };
